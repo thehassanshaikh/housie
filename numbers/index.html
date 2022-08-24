@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number genrator</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container pt-4">
+        <h2 class="text-center pt-2 pb-2">Housie Number Genrator</h2>
+        <div class="row">
+            <div class="col-lg-2  d-flex flex-column text-center bor">
+                <h1 class="gen-num" id="demo">0</h1>
+                <div class="gen-btn-container">
+                    <button class="gen-btn-1 " id="gen-btn" onclick="myFunction(); removeLast();">Generate</button>
+                </div>
+                <div class="row pt-4 info-container">
+                    <div class="d-flex">
+                        <div class="blue"></div>
+                        <p class="info">Awaiting Numbers</p>
+                    </div>
+                    <div class="d-flex">
+                        <div class="orange"></div>
+                        <p class="info">Completed Numbers</p>
+                    </div>
+                    <div class="d-flex">
+                        <div class="red"></div>
+                        <p class="info">Current Number</p>
+                    </div>
+                </div>
+                <div class="pt-2 pb-2">
+                    <button class="print" onclick="window.print()">Print</button>
+                    <button class="reset print" onclick="reloadPage(); randomQuote();">New Game</button>
+                </div>
+            </div>
+            <div class="col-lg-10 bor">
+                <!-- 1-10 number -->
+                <div class="d-flex justify-content-evenly text-center pt ">
+                    <div class="col-1 numbers" id="n-1">1</div>
+                    <div class="col-1 numbers" id="n-2">2</div>
+                    <div class="col-1 numbers" id="n-3">3</div>
+                    <div class="col-1 numbers" id="n-4">4</div>
+                    <div class="col-1 numbers" id="n-5">5</div>
+                    <div class="col-1 numbers" id="n-6">6</div>
+                    <div class="col-1 numbers" id="n-7">7</div>
+                    <div class="col-1 numbers" id="n-8">8</div>
+                    <div class="col-1 numbers" id="n-9">9</div>
+                    <div class="col-1 numbers" id="n-10">10</div>
+                </div>
+                <!-- 10-20 number -->
+                <div class="d-flex justify-content-evenly text-center pt">
+                    <div class="col-1 numbers" id="n-11">11</div>
+                    <div class="col-1 numbers" id="n-12">12</div>
+                    <div class="col-1 numbers" id="n-13">13</div>
+                    <div class="col-1 numbers" id="n-14">14</div>
+                    <div class="col-1 numbers" id="n-15">15</div>
+                    <div class="col-1 numbers" id="n-16">16</div>
+                    <div class="col-1 numbers" id="n-17">17</div>
+                    <div class="col-1 numbers" id="n-18">18</div>
+                    <div class="col-1 numbers" id="n-19">19</div>
+                    <div class="col-1 numbers" id="n-20">20</div>
+                </div>
+                <!--20-30 number -->
+                <div class="d-flex justify-content-evenly text-center pt">
+                    <div class="col-1 numbers" id="n-21">21</div>
+                    <div class="col-1 numbers" id="n-22">22</div>
+                    <div class="col-1 numbers" id="n-23">23</div>
+                    <div class="col-1 numbers" id="n-24">24</div>
+                    <div class="col-1 numbers" id="n-25">25</div>
+                    <div class="col-1 numbers" id="n-26">26</div>
+                    <div class="col-1 numbers" id="n-27">27</div>
+                    <div class="col-1 numbers" id="n-28">28</div>
+                    <div class="col-1 numbers" id="n-29">29</div>
+                    <div class="col-1 numbers" id="n-30">30</div>
+                </div>
+                <!-- 30-40 number -->
+                <div class="d-flex justify-content-evenly text-center pt">
+                    <div class="col-1 numbers" id="n-31">31</div>
+                    <div class="col-1 numbers" id="n-32">32</div>
+                    <div class="col-1 numbers" id="n-33">33</div>
+                    <div class="col-1 numbers" id="n-34">34</div>
+                    <div class="col-1 numbers" id="n-35">35</div>
+                    <div class="col-1 numbers" id="n-36">36</div>
+                    <div class="col-1 numbers" id="n-37">37</div>
+                    <div class="col-1 numbers" id="n-38">38</div>
+                    <div class="col-1 numbers" id="n-39">39</div>
+                    <div class="col-1 numbers" id="n-40">40</div>
+                </div>
+                <!-- 40-50 number -->
+                <div class="d-flex justify-content-evenly text-center pt">
+                    <div class="col-1 numbers" id="n-41">41</div>
+                    <div class="col-1 numbers" id="n-42">42</div>
+                    <div class="col-1 numbers" id="n-43">43</div>
+                    <div class="col-1 numbers" id="n-44">44</div>
+                    <div class="col-1 numbers" id="n-45">45</div>
+                    <div class="col-1 numbers" id="n-46">46</div>
+                    <div class="col-1 numbers" id="n-47">47</div>
+                    <div class="col-1 numbers" id="n-48">48</div>
+                    <div class="col-1 numbers" id="n-49">49</div>
+                    <div class="col-1 numbers" id="n-50">50</div>
+                </div>
+                <!-- 50-60 number -->
+                <div class="d-flex justify-content-evenly text-center pt">
+                    <div class="col-1 numbers" id="n-51">51</div>
+                    <div class="col-1 numbers " id="n-52">52</div>
+                    <div class="col-1 numbers" id="n-53">53</div>
+                    <div class="col-1 numbers" id="n-54">54</div>
+                    <div class="col-1 numbers" id="n-55">55</div>
+                    <div class="col-1 numbers" id="n-56">56</div>
+                    <div class="col-1 numbers" id="n-57">57</div>
+                    <div class="col-1 numbers" id="n-58">58</div>
+                    <div class="col-1 numbers" id="n-59">59</div>
+                    <div class="col-1 numbers" id="n-60">60</div>
+                </div>
+                <!-- 60-70 number -->
+                <div class="d-flex justify-content-evenly text-center pt">
+                    <div class="col-1 numbers" id="n-61">61</div>
+                    <div class="col-1 numbers" id="n-62">62</div>
+                    <div class="col-1 numbers" id="n-63">63</div>
+                    <div class="col-1 numbers" id="n-64">64</div>
+                    <div class="col-1 numbers" id="n-65">65</div>
+                    <div class="col-1 numbers" id="n-66">66</div>
+                    <div class="col-1 numbers" id="n-67">67</div>
+                    <div class="col-1 numbers" id="n-68">68</div>
+                    <div class="col-1 numbers" id="n-69">69</div>
+                    <div class="col-1 numbers" id="n-70">70</div>
+                </div>
+                <!-- 70-80 number -->
+                <div class="d-flex justify-content-evenly text-center pt">
+                    <div class="col-1 numbers" id="n-71">71</div>
+                    <div class="col-1 numbers" id="n-72">72</div>
+                    <div class="col-1 numbers" id="n-73">73</div>
+                    <div class="col-1 numbers" id="n-74">74</div>
+                    <div class="col-1 numbers" id="n-75">75</div>
+                    <div class="col-1 numbers" id="n-76">76</div>
+                    <div class="col-1 numbers" id="n-77">77</div>
+                    <div class="col-1 numbers" id="n-78">78</div>
+                    <div class="col-1 numbers" id="n-79">79</div>
+                    <div class="col-1 numbers" id="n-80">80</div>
+                </div>
+                <!-- 80-90 number -->
+                <div class="d-flex justify-content-evenly text-center pt pb">
+                    <div class="col-1 numbers" id="n-81">81</div>
+                    <div class="col-1 numbers " id="n-82">82</div>
+                    <div class="col-1 numbers" id="n-83">83</div>
+                    <div class="col-1 numbers" id="n-84">84</div>
+                    <div class="col-1 numbers" id="n-85">85</div>
+                    <div class="col-1 numbers" id="n-86">86</div>
+                    <div class="col-1 numbers" id="n-87">87</div>
+                    <div class="col-1 numbers" id="n-88">88</div>
+                    <div class="col-1 numbers" id="n-89">89</div>
+                    <div class="col-1 numbers" id="n-90">90</div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="tickets text-center pt-4 ">
+            <h5>Get Housie Tickits Here</h5>
+            <button class="gen-btn-2"><a href="#" target="_blank">Open Tickits</a></button>
+        </div>
+        <div class=" text-center pt-4">
+            <p>Design with <span style="color:coral ;">♥</span> By Hassan.sh</p>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

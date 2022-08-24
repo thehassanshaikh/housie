@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("https://www.skilledhousie.com/assets/images/app-background-2-946x946.png");
+    background-size: cover;
+    font-family: 'Arimo', sans-serif;
+
+}
+
+a {
+    text-decoration: none!important;
+    color: white!important;
+}
+
+.main{
+    height: 80vh;
+}
+
+@media (max-width: 1024px){
+    .main{
+        height: auto;
+    }
+}
+.card-container {
+    width: 70%;
+    border: 5px solid white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+h1 {
+    color: aliceblue;
+    font-family: 'Arimo', sans-serif;
+    
+}
+
+h3.card-text {
+    PADDING: 5%;
+    FONT-SIZE: xx-large;
+    COLOR: WHITE;
+    FONT-WEIGHT: 600;
+}
+
+h3.card-text:hover {
+    COLOR: rgb(167, 162, 162)!important;
+}

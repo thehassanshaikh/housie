@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.bor {
+    border: 2px solid coral;
+}
+
+.done {
+    background-color: coral !important;
+    border: 2px solid coral;
+}
+
+.last {
+    background-color: red !important;
+    border: 2px solid red;
+}
+
+button.gen-btn-1 {
+    width: 80%;
+    background-color: coral;
+    border: 2px solid #f9642e;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 8px;
+}
+.gen-btn-1:active{
+    background-color: rgb(250, 99, 44);
+}
+
+
+.gen-num {
+    padding: 10px;
+    font-size: 50px;
+}
+
+.numbers {
+    background-color: #1ecbe1;
+    padding: 15px;
+    border-radius: 5px;
+    color: black;
+    font-size: larger;
+    font-weight: 600;
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-width : 768px) {
+    .numbers {
+        background-color: #1ecbe1;
+        padding: 2px;
+        border-radius: 5px;
+        color: black;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .pt {
+        padding-top: 0.5rem !important;
+    }
+
+    .pt {
+        padding-top: 0.5rem !important;
+    }
+
+    .info-container{
+        display: none!important;
+    }
+
+    
+}
+
+.pt {
+    padding-top: 1.5rem;
+}
+
+.pb {
+    padding-bottom: 1.5rem;
+}
+
+
+.orange,
+.blue,
+.red {
+    height: 15px;
+    width: 15px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.orange {
+    background-color: coral;
+}
+
+.blue {
+    background-color: #1ecbe1;
+}
+
+.red {
+    background-color: red;
+}
+
+.info {
+    padding: 0 5px;
+    font-weight: 500;
+}
+
+@media only screen and (min-width:768px ) and (max-width: 991px) {
+
+    .info-container{
+        display: none!important;
+    }
+    
+    .pt {
+        padding-top: 10px !important;
+    }
+
+    .pt {
+        padding-top: 10px !important;
+    }
+}
+
+.print {
+    padding: 1px 15px;
+    border: 1px solid beige;
+    border-radius: 5px;
+    background-color: lightgrey;
+}
+
+.gen-btn-2{
+    background-color: #f9642e;
+    border: 2px solid #f9642e;
+    padding: 5px ;
+    border-radius: 5px;
+}

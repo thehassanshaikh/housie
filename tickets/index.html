@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housie Ticket</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- Custom css link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- script link -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Bingo/Housie/Tambola Ticket Generator</h2>
+        <p>Click the number to mark it, click again to unmark</p>
+        <table id="tbl"></table>
+        <div style="margin-top: 20px; font-weight: bold;" id="marked">Marked: 0</div>
+        <div style="font-weight: bold;">
+            <p id="quoeText"></p>
+        </div>
+        <input type="button" value="Generate New Ticket" onclick="generateTicket(1);  randomQuote();"
+            style="margin-top: 20px; font-size: 15px; padding: 5px 20px;">
+        <br><br>
+
+        <a href="bingo.htm">Bingo/Housie/Tambola Number Generator</a>
+
+
+        <!-- <div id="footer">
+        Created by <a href="http://www.yash.info/">Yash Gadhiya</a>.
+    </div> -->
+
+
+</body>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-256749-9"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-256749-9');
+</script>
+
+</html>
