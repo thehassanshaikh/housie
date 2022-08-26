@@ -415,7 +415,7 @@ var confetti = {
             function randomQuote() {
         
                 let r = Math.floor(Math.random() * 15 + 1);
-                document.getElementById("quoeText").innerHTML = quote[r];
+                document.getElementById("quoteText").innerHTML = quote[r];
                 console.log(quote[r]);
             }
 
