@@ -13,7 +13,7 @@ body{
 
 a {
     text-decoration: none!important;
-    color: white!important;
+    color: black!important;
 }
 
 .main{
@@ -41,7 +41,7 @@ h1 {
 h3.card-text {
     PADDING: 5%;
     FONT-SIZE: xx-large;
-    COLOR: WHITE;
+    COLOR: black;
     FONT-WEIGHT: 600;
 }
 
